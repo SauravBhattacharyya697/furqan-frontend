@@ -5,6 +5,7 @@ import WorkComponent from "./components/workComponent";
 import TestimonialComponent from "./components/testimonialComponent";
 import PricingComponent from "./components/pricingComponent";
 import TestComponent from "./components/testComponent";
+import FooterComponent from "./components/footerComponent";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <TestimonialComponent />
       <PricingComponent />
       <TestComponent />
+      <FooterComponent />
     </div>
   );
 };
