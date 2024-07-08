@@ -4,3 +4,4 @@ export const RECOMMEND = "/images/recommend.png";
 export const EXPLORE = "/images/explore.png";
 export const ACCESS = "/images/access.png";
 export const WORKIMAGE = "/images/image51.png";
+export const FRAME = "/public/images/Frame.png";

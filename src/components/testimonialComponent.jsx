@@ -1,6 +1,7 @@
 import React from "react";
 import Testimonial from "./testimonial/testimonial";
 import { Testimonials } from "../utils/testimonialContent";
+import { FRAME } from "../utils/images";
 
 const TestimonialComponent = () => {
   return (
@@ -27,7 +28,18 @@ const TestimonialComponent = () => {
           <button type="button">Get Started for Free</button>
         </div>
       </div>
-      <div></div>
+      <div>
+        <div>
+          <img src={FRAME} alt="frame" />
+        </div>
+        <div>We keep your personal online data private, safe, and secure.</div>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </div>
+      </div>
     </div>
   );
 };
