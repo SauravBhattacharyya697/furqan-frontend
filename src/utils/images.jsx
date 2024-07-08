@@ -5,3 +5,4 @@ export const EXPLORE = "/images/explore.png";
 export const ACCESS = "/images/access.png";
 export const WORKIMAGE = "/images/image51.png";
 export const FRAME = "/images/Frame.png";
+export const TESTS = "/images/tests.png";

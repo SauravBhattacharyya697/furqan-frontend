@@ -1,0 +1,15 @@
+export const TestList = [
+  "Orientation Style (Preferences)",
+  "Interests",
+  "Personality Traits",
+  "Abstract Reasoning",
+  "Verbal Aptitude",
+  "Logical Reasoning",
+  "Creative Aptitude",
+  "Spatial Aptitude",
+  "Language Usage Aptitude",
+  "Numerical Apritude",
+  "Perceptual Speed and Accuracy",
+  "Emotional Quotient",
+  "Cognitive Profiling",
+];
