@@ -1,17 +1,19 @@
 import React from "react";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+
 
 const LeftHighlight = () => {
   return (
-    <div>
-      <div>For Students</div>
-      <div>Discover your ideal career</div>
-      <div>
+    <div className="top-banner-left">
+      <span className="roundText">For Students</span>
+      <h1>Discover Your Ideal <span className="gradientText">Career |</span></h1>
+      <p>
         With Educationist.ai, get personalized career guidance to make informed
         decisions about your future
-      </div>
-      <div className="flex">
-        <button type="button">Start Exploring your Career</button>
-        <button type="button">Watch Video</button>
+      </p>
+      <div className="banner-part-buton">
+        <button type="button" className="defaultButton">Start Exploring your Career</button>
+        <div className="watchVideo"><span><PlayArrowIcon/></span> Watch Video</div>
       </div>
     </div>
   );

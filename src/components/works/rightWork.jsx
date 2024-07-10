@@ -1,18 +1,22 @@
 import React from "react";
 import { FeatureContent } from "../../utils/featureContent";
 import Feature from "./feature";
+import { RIGHTARROW } from "../../utils/images";
 
 const RightWork = () => {
   return (
     <div>
-      <div>Our Features</div>
-      <div>
-        Unlock your true potential with the <span>AI powered Career Coach</span>
+      <div className="main-header">
+        <span className="roundText">Our Features</span>
+        <h2>
+          Unlock your true potential with the <span className="gradientText">AI powered Career Coach</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore
+        </p>
       </div>
-      <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore
-      </div>
+
       <div>
         {FeatureContent.map((feature) => (
           <div key={feature.id}>
@@ -25,7 +29,7 @@ const RightWork = () => {
         ))}
       </div>
       <div>
-        <button type="button">Learn More</button>
+        <button type="button" className="defaultButton">Learn More <img src={RIGHTARROW} alt="rightarrow" /></button>
       </div>
     </div>
   );

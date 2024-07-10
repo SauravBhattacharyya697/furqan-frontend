@@ -3,7 +3,7 @@ import { LOGO } from "../../utils/images";
 
 const Logo = () => {
   return (
-    <div>
+    <div className="topLogoPart">
       <img src={LOGO} alt="Logo" />
     </div>
   );

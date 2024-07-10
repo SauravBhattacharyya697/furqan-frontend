@@ -1,4 +1,6 @@
 import React from "react";
+import { TICKICON } from "../../utils/images";
+
 
 const ExpertPlan = ({
   title,
@@ -10,24 +12,24 @@ const ExpertPlan = ({
   upcoming,
 }) => {
   return (
-    <div>
-      {upcoming && <div>Upcoming</div>}
-      <div className="flex">
-        <div>
-          <div>{title}</div>
-          <div>{subText}</div>
-          <div>
-            <div>{textOne}</div>
-            <div>{textTwo}</div>
-          </div>
+    <div className="plan-price-single">
+      {upcoming && <span className="priceshape">Upcoming</span>}
+      <div className="plan-price-single-box">
+        <div className="bix-price-plan-left">
+          <h3>{title}</h3>
+          <p>{subText}</p>
+          <ul>
+            <li><img src={TICKICON} alt="tickicon" />{textOne}</li>
+            <li><img src={TICKICON} alt="tickicon" />{textTwo}</li>
+          </ul>
         </div>
-        <div>
-          <div>
-            <span>{displayPrice}</span>
-            {originalPrice && <span>{originalPrice}</span>}
+        <div className="bix-price-plan-right">
+          <div className="price-value">
+            <h2>{displayPrice}</h2>
+            {originalPrice && <s>{originalPrice}</s>}
           </div>
           <div>
-            <button type="button">Get Started</button>
+            <button type="button" className="defaultButton">Get Started</button>
           </div>
         </div>
       </div>

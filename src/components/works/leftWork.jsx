@@ -3,7 +3,7 @@ import { WORKIMAGE } from "../../utils/images";
 
 const LeftWork = () => {
   return (
-    <div>
+    <div className="work-image-left">
       <img src={WORKIMAGE} alt="" />
     </div>
   );

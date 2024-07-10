@@ -1,13 +1,17 @@
 import React from "react";
 import WorkSteps from "./workSteps";
+import Container from '@mui/material/Container';
 import { ACCESS, EXPLORE, RECOMMEND, SIGNUP } from "../../utils/images";
 
 const TopWork = () => {
   return (
-    <div>
-      <div>How it Works</div>
-      <div>How it Works</div>
-      <div className="flex">
+    <div className="how-it-works">
+      <Container>
+      <div className="main-header">
+        <span className="roundText">How it Works</span>
+        <h2>How it <span className="gradientText">Works</span></h2>
+      </div>
+      <div className="how-work-inner">
         <WorkSteps
           icon={SIGNUP}
           title={"Sign Up"}
@@ -41,6 +45,7 @@ const TopWork = () => {
           index={4}
         />
       </div>
+      </Container>
     </div>
   );
 };

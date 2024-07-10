@@ -2,13 +2,13 @@ import React from "react";
 
 const WorkSteps = ({ icon, title, text, index }) => {
   return (
-    <div>
+    <div className="how-work-single">
       <div>
         <img src={icon} alt={title} />
       </div>
-      <div>{index}</div>
-      <div>{title}</div>
-      <div>{text}</div>
+      <span className="staepNumber">{index}</span>
+      <h4>{title}</h4>
+      <p>{text}</p>
     </div>
   );
 };
